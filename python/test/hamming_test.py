@@ -1,9 +1,11 @@
+"""Hamming distance unit test cases."""
 import unittest
 
 import hamming
 
 
 class HammingTest(unittest.TestCase):
+    """Test class."""
 
     def test_identical_strands(self):
         self.assertEqual(0, hamming.compute('A', 'A'))
