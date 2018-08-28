@@ -10,4 +10,4 @@ def compute(dna_seq1, dna_seq2):
         raise ValueError
     else:
         # Return the hamming distance between 2 DNAs
-        return sum(ch1 != ch2 for ch1, ch2 in zip(dna_seq1, dna_seq2))
+        return sum(pos1 != pos2 for pos1, pos2 in zip(dna_seq1, dna_seq2))
