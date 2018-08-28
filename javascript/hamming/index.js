@@ -4,14 +4,14 @@
 // You may use ES6 or ES5 to solve.
 
 class Hamming {
-  compute(str1, str2) {
-    if (str1.length !== str2.length)
+  compute(dna_seq1, dna_seq2) {
+    if (dna_seq1.length !== dna_seq2.length)
       throw "DNA strands must be of equal length.";
-    let result = 0;
-    for (let i = 0; i < str1.length; i++) {
-      if (str1[i] !== str2[i]) result++;
+    let hamming_distance = 0;
+    for (let i = 0; i < dna_seq1.length; i++) {
+      if (dna_seq1[i] !== dna_seq2[i]) hamming_distance++;
     }
-    return result;
+    return hamming_distance;
   }
 }
 
